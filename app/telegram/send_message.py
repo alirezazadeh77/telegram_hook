@@ -12,4 +12,4 @@ def send_message(text):
         str_message += f'<em><b>{key.replace("_"," ")}:</b></em>\n' \
                        f'{value}\n'
 
-    _bot.sendMessage(chat_id=telegram_chat_id, text=text, parse_mode=telegram.ParseMode.HTML)
+    _bot.sendMessage(chat_id=telegram_chat_id, text=str_message, parse_mode=telegram.ParseMode.HTML)
