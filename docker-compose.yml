@@ -1,0 +1,6 @@
+services:
+  hook:
+    build: .
+    restart: always
+    ports:
+      - "0.0.0.0:8087:80"
